@@ -1,0 +1,120 @@
+.dash-header {
+    background: rgb(248, 245, 245) !important;
+    border: none;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dark .dash-header {
+    background: #232132 !important;
+}
+
+.header-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #191D31;
+    padding: 10px 15px;
+    border-radius: 10px;
+    height: 100%;
+
+    input {
+        background: transparent;
+    }
+}
+
+.dark-container {
+    padding: 5px 4px;
+    background: #191D31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+
+    button {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .dark-active {
+        background: #1F2335;
+        border-radius: 12px;
+        color: #FCAC56;
+    }
+}
+
+.alert-display {
+    padding: 4px;
+    background: #F9857A;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+.multi-language {
+    padding: 5px 4px;
+    background: #191D31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+}
+
+.flag-icon {
+    width: 27px;
+    height: 27px;
+}
+
+.header-list-hamburger {
+    display: none;
+}
+
+.header-list-show {
+    display: block !important;
+}
+
+@media (max-width:1280px) {
+    .header-list {
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 20px;
+        background: #191727;
+        border-bottom: 1px #232132 solid;
+
+        >div {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header-search-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .dark-container {
+            width: 100px;
+        }
+    }
+
+    .header-list-hamburger {
+        display: block;
+        font-size: 25px;
+    }
+}

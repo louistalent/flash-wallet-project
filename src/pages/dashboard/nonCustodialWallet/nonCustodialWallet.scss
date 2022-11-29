@@ -1,0 +1,66 @@
+.non-custodial-wallet-section {
+    padding-top: 30px;
+
+    .non-custodial-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 8px;
+
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 55px;
+
+        .plus-icon {
+            padding: 5px;
+            border-radius: 50%;
+            background: #61BEFF;
+        }
+    }
+
+    .non-custodial-desciption {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 26px;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    .non-custodial-card {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        background: #232132;
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    .metamask-container {
+        padding: 7px;
+        background: white;
+        border-radius: 50%;
+    }
+
+    .wallet-user {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4px 8px;
+        width: 165px;
+        height: 32px;
+        background: #191727;
+        border: 1px solid #FFC000;
+        border-radius: 55px;
+        margin-left: 10px;
+
+        .wallet-user-close {
+            padding: 1px;
+            border-radius: 50%;
+            background: white;
+            color: rgba(226, 3, 3, 1);
+        }
+    }
+}

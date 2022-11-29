@@ -1,0 +1,230 @@
+.create-wallet-section {
+
+    .process-bar {
+        flex: 1;
+        width: 100%;
+        height: 8px;
+        background: var(--grey2);
+        border-radius: 2px;
+    }
+
+    .process-bar-active {
+        background: #FEBF32 !important;
+    }
+
+    .create-pass-policy {
+        background: var(--primary) !important;
+        color: white;
+    }
+
+    .face-id-btn {
+        padding: 4px 4px 4px 4px;
+        width: 68px;
+        height: 32px;
+        background: #FEBF32;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .face-id-toggle {
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 6px;
+        }
+    }
+
+    .seed-input {
+        border-radius: 5px;
+        background: transparent;
+        padding: 5px 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px #35363c82 solid;
+        width: 100%;
+
+
+        .title {
+            color: #888DAA;
+            font-size: 14px;
+        }
+
+        .textarea {
+            background: transparent;
+            color: white;
+            width: 250px;
+
+            // hyphens: manual;
+            // word-wrap: break-word;
+            // word-break: break-all;
+            // overflow-wrap: break-word;
+            // white-space: pre-line;
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: none;
+                border: none;
+                outline: none;
+            }
+        }
+
+        .pharse {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        input {
+            background: transparent;
+        }
+    }
+
+    .create-pass-policy {
+        opacity: 0; // hide it
+
+        &+label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        // Box.
+        &+label:before {
+            content: '';
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
+            width: 20px;
+            height: 20px;
+            background: white;
+        }
+
+        // Box hover
+        &:hover+label:before {
+            background: #FEBF32;
+        }
+
+        // Box focus
+        &:focus+label:before {
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+        }
+
+        // Box checked
+        &:checked+label:before {
+            background: #FEBF32;
+        }
+
+        // Disabled state label.
+        &:disabled+label {
+            color: #b8b8b8;
+            cursor: auto;
+        }
+
+        // Disabled box.
+        &:disabled+label:before {
+            box-shadow: none;
+            background: #ddd;
+        }
+
+        // Checkmark. Could be replaced with an image
+        &:checked+label:after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 9px;
+            background: white;
+            width: 2px;
+            height: 2px;
+            box-shadow:
+                2px 0 0 white,
+                4px 0 0 white,
+                4px -2px 0 white,
+                4px -4px 0 white,
+                4px -6px 0 white,
+                4px -8px 0 white;
+            transform: rotate(45deg);
+        }
+    }
+
+    .remind-btn {
+        background: transparent;
+        color: #FEBF32;
+        font-weight: bold;
+        border: 1px solid #FEBF32;
+    }
+
+    .success-bar {
+        width: 52.67px;
+        height: 8px;
+        background: #76E268;
+        border-radius: 2px;
+    }
+
+    ul {
+        li {
+            ul {
+                li {
+                    list-style-type: disc;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    .seed-btn-group {
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 16px;
+            gap: 10px;
+            width: 100%;
+            background: #2A2D3C;
+            border-radius: 8px;
+        }
+    }
+
+    .confirm-seed-btn-group {
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 16px;
+            gap: 10px;
+            width: 100%;
+            background: #2A2D3C;
+            border-radius: 8px;
+
+            &:hover {
+                background: #FEBF32;
+                color: black;
+            }
+        }
+    }
+
+    .confirm-line {
+        border: 1px solid #FFFFFF;
+    }
+
+    @media (max-width:600px) {
+        .mobile-container {
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+        }
+
+        .create-flash-logo {
+            margin-top: 10px;
+            width: 130px;
+            height: 130px;
+        }
+    }
+}

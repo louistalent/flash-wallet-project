@@ -1,0 +1,14 @@
+.dashboard-section {
+    padding-top: 30px;
+
+    .dashboard-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 31px;
+        background: #232132;
+        border-radius: 12px;
+        height: 100%;
+    }
+}

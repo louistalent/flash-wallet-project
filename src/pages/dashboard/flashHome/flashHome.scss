@@ -1,0 +1,124 @@
+.flash-section {
+    padding-top: 30px;
+
+    .flash-card {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #232132;
+        border-radius: 12px;
+        padding: 20px;
+        height: 100%;
+    }
+
+
+    .dead-function {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4px 8px;
+        width: 140px;
+        margin-top: 30px;
+        height: 32px;
+        background: #191727;
+        border-radius: 55px;
+
+        .wallet-user-close {
+            padding: 1px;
+            border-radius: 50%;
+            background: white;
+            color: rgba(226, 3, 3, 1);
+        }
+    }
+
+    .flash-functions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 40px 50px;
+        background: #232132;
+        height: 100%;
+        border-radius: 12px;
+
+        .function {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+            width: 100%;
+            height: 170px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            transition: all ease 0.1s;
+
+            &:hover {
+                border: 1px #ffc000 solid;
+                cursor: pointer;
+            }
+
+            @media (max-width:600px) {
+                height: 100px;
+                width: 160px;
+            }
+        }
+
+        @media (max-width:600px) {
+            flex-direction: column;
+        }
+    }
+
+    .flash-status {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 25px 25px;
+        background: #232132;
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .transfer-account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 30px;
+        /* PRIMARY/P2 */
+        background: #5D5FEF;
+        border-radius: 4px;
+    }
+
+    .account-value {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 16px;
+        gap: 8px;
+        height: 34px;
+        background: #2A2D3C;
+        border-radius: 100px;
+    }
+
+    .token-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 6px 8px;
+        border-radius: 10px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        border: 1px solid transparent;
+
+        &:hover {
+            border: 1px solid #FFC000;
+            cursor: pointer;
+        }
+    }
+}

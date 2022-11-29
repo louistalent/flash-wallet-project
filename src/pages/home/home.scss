@@ -1,0 +1,207 @@
+.first-section {
+    background: #191727;
+    padding-bottom: 80px;
+
+    .home-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .watch-video {
+        margin-left: 22%;
+    }
+
+    .feature-card {
+        .icon-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        background: #232132;
+        padding: 20px;
+        align-items: flex-start;
+        border-radius: 20px;
+    }
+
+    @media (max-width:600px) {
+        .watch-video {
+            margin-top: 20px;
+            margin-left: 0%;
+        }
+    }
+
+
+}
+
+.story-section {
+    background: #232132;
+
+}
+
+.trustpilot-section {
+    background: #0F0F0F;
+    position: relative;
+
+
+    .pattern {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    @media (max-width:576px) {}
+}
+
+.common-section {
+    background: #232132;
+
+    @media (max-width:576px) {}
+}
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #787878 #b82828;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #0F0F0F;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #464545;
+    border-radius: 10px;
+}
+
+.request-setting-modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0px);
+    animation: 0.3s ease-in-out 0s 1 normal forwards running opacity-animation;
+    overflow-y: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    z-index: 99999999999;
+}
+
+.request-setting-modal-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+}
+
+.request-setting-modal-body {
+    max-width: 700px;
+    margin: auto;
+    width: 100%;
+    background: #141414;
+    z-index: 9999;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.request-modal-header {
+    background: #191727;
+}
+
+.modal-content {
+    overflow: auto;
+    height: 100%;
+    max-height: 700px;
+}
+
+
+// ------------ status modal --------------
+
+.status-modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0px);
+    animation: 0.3s ease-in-out 0s 1 normal forwards running opacity-animation;
+    overflow-y: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    z-index: 99999999999;
+
+    .modal-content {
+        overflow: auto;
+        height: 100%;
+        max-height: 700px;
+    }
+
+    .status-modal-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 9998;
+        color: black;
+    }
+
+    .status-modal-body {
+        max-width: 800px;
+        margin: auto;
+        width: 100%;
+        background: white;
+        z-index: 9999;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+    }
+
+    .status-modal-header {
+        position: relative;
+
+        .status-close {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+
+        // background: #191727;
+    }
+}
