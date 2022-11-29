@@ -33,7 +33,7 @@ const Home = () => {
 									Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
 								</h5>
 								<div className="flex items-center justify-center sm:justify-start gap-8 mt-8">
-									<button onClick={() => setRequestModal(true)} className="btn primary-bg gap-2 text-black">
+									<button className="btn primary-bg gap-2 text-black">
 										<span>
 											Watch Video
 										</span>
