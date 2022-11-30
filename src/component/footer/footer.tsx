@@ -1,5 +1,7 @@
 import React from 'react';
 import { RiGooglePlayFill, RiStarSFill } from "react-icons/ri";
+import { FaTelegramPlane } from "react-icons/fa";
+
 import "./footer.scss";
 import { Link } from 'react-router-dom';
 const Footer = () => {
@@ -20,7 +22,8 @@ const Footer = () => {
                             <img src="/assets/images/footer/twitter.png" className='' width={'22px'} alt="" />
                             <img src="/assets/images/footer/instagram.png" className='' width={'22px'} alt="" />
                             <img src="/assets/images/footer/dribbble.png" className='' width={'22px'} alt="" />
-                            <img src="/assets/images/footer/behance.png" className='' width={'22px'} alt="" />
+                            {/* <img src="/assets/images/footer/behance.png" className='' width={'22px'} alt="" /> */}
+                            <FaTelegramPlane fontSize={20} />
                         </div>
 
                     </div>
@@ -28,7 +31,7 @@ const Footer = () => {
                 <div className='res-mt3' style={{ border: '1px solid rgba(255, 255, 255, 0.1)' }}></div>
                 <div className="mt-4 text-center">
                     <h6 className="grey-color">
-                        Copyright ©FLashWallet. All rights reserved
+                        Copyright ©FlashWallet. All rights reserved
                     </h6>
                 </div>
             </section>

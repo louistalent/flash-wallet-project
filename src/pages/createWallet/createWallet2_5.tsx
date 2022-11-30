@@ -35,9 +35,11 @@ const CreateWallet6 = () => {
                         <div className="w-full confirm-seed-btn-group">
 
                         </div>
-                        <button className={`btn w-full primary-bg black-color font-bold mt-4`}>
-                            <Link to='/dashboard'>Next</Link>
-                        </button>
+                        <Link to='/dashboard' className="w-full">
+                            <button className={`btn w-full primary-bg black-color font-bold mt-4`}>
+                                Next
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

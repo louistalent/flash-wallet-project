@@ -109,7 +109,7 @@ const NFT = () => {
                 <div className="mt-14">
                     <div className="nft-group">
                         {nftList.map((item: any, index: number) => (
-                            <div className="nft-list">
+                            <div key={index} className="nft-list">
                                 <div className="">
                                     <img src={`/assets/images/nft/${item.img}`} alt={item.img} className="" />
                                 </div>

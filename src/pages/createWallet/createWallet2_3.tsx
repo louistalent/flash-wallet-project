@@ -87,11 +87,11 @@ const CreateWallet4 = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className={`btn w-full primary-bg black-color font-bold mt-4`}>
-                            <Link to={'/create-wallet5'}>
+                        <Link to={'/create-wallet5'} className="w-full">
+                            <button className={`btn w-full primary-bg black-color font-bold mt-4`}>
                                 Start
-                            </Link>
-                        </button>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -74,7 +74,7 @@ export default function Header() {
                             <path d="M2 5v2h20V5H2zm0 6v2h20v-2H2zm0 6v2h20v-2H2z"></path>
                         </svg>
                     </div>
-                    <Link to="/" aria-current="page" className=" lg:block ml-4 router-link-exact-active router-link-active" aria-hidden="true">
+                    <Link to="/" aria-current="page" className=" lg:block ml-0 sm:ml-4  router-link-exact-active router-link-active" aria-hidden="true">
                         <div className="flex items-center justify-center gap-2">
                             <FlashLogoSvg />
                             {/* <img src={'./logo2.png'} style={{ width: '45px', height: '45px' }} alt='LOGO' /> */}

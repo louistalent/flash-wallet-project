@@ -113,11 +113,11 @@ const CreateWallet3 = () => {
                             </p>
                         </div>
 
-                        <button className={`btn w-full primary-bg black-color font-bold`}>
-                            <Link to={'/create-wallet4'}>
+                        <Link to={'/create-wallet4'} className="w-full">
+                            <button className={`btn w-full primary-bg black-color font-bold`}>
                                 Start
-                            </Link>
-                        </button>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
