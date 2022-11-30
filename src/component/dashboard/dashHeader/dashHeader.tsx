@@ -10,7 +10,7 @@ import { FaChevronDown, FaRegBell, FaLayerGroup } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
 
-import { SearchSvg } from '../../../assets/svg/svg';
+import { SearchSvg, FlashLogoSvg } from '../../../assets/svg/svg';
 import './dashHeader.scss';
 
 
@@ -76,8 +76,9 @@ export default function Header() {
                     </div>
                     <Link to="/" aria-current="page" className=" lg:block ml-4 router-link-exact-active router-link-active" aria-hidden="true">
                         <div className="flex items-center justify-center gap-2">
-                            <img src={'./logo2.png'} style={{ width: '45px', height: '45px' }} alt='LOGO' />
-                            <span className='font-bold'>FLASH WALLET</span>
+                            <FlashLogoSvg />
+                            {/* <img src={'./logo2.png'} style={{ width: '45px', height: '45px' }} alt='LOGO' /> */}
+                            {/* <span className='font-bold'>FLASH WALLET</span> */}
                         </div>
                     </Link>
                 </div>

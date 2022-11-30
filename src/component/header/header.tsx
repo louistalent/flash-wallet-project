@@ -5,6 +5,7 @@ import { simpleAddress } from "../../util";
 import { BsChevronDown, BsChevronCompactUp } from "react-icons/bs";
 import { AiOutlineMinus, AiOutlineClose } from "react-icons/ai";
 import { FaTwitter, FaTelegramPlane, FaInstagram, FaFacebookF, FaGithub } from "react-icons/fa";
+import { FlashLogoSvg } from '../../assets/svg/svg';
 import "./header.scss";
 import RequestModal from '../RequestModal';
 
@@ -23,7 +24,8 @@ const Header = () => {
 						</div>
 						<Link to='/'>
 							<div className="flex items-center justify-start gap-2" style={{ width: '230px' }} >
-								<img src="/logo3.png" style={{ maxHeight: '100%', width: '100%' }} alt="" className="" />
+								{/* <img src="/flash-logo.svg" style={{ maxHeight: '100%', width: '100%' }} alt="flash-logo" className="" /> */}
+								<FlashLogoSvg />
 								{/* <div className='text-center leading-4'>
 									<h5 className='' style={{ margin: '0!important' }}>FLASH</h5>
 									<span style={{ fontSize: '10px' }}>
