@@ -114,7 +114,9 @@ const CreateWallet3 = () => {
                         </div>
 
                         <button className={`btn w-full primary-bg black-color font-bold`}>
-                            Start
+                            <Link to={'/create-wallet4'}>
+                                Start
+                            </Link>
                         </button>
                     </div>
                 </div>
