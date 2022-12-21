@@ -42,7 +42,7 @@ const Header = () => {
 						</div>
 						<ul className='hamburger justify li-none-style'>
 							<li className='hamburger-list'>
-								<Link to='/portfolio'>Flash Coin</Link>
+								<a href='https://flash-swap.com/' target="_blink">Flash Coin</a>
 							</li>
 							<li className='hamburger-list' onClick={() => setRequestModal(true)}>
 								<Link to='/create-wallet'>
